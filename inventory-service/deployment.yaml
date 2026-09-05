@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: inventory-service
+  namespace: ecommerce
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: inventory-service
+  template:
+    metadata:
+      labels:
+        app: inventory-service
+    spec:
+      containers:
+        - name: inventory-service
+          image: docker.io/yatharthchandel/inventory-service:v1
+          ports:
+            - containerPort: 5001
+          resources:
+            requests:
+              memory: "128Mi"
+              cpu: "100m"
+
+
