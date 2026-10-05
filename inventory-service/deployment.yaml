@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: inventory-service
-          image: docker.io/yatharthchandel/inventory-service:v1
+          image: docker.io/yatharthchandel/inventory-service@sha256:dff0aba8914a1a718fc2caf161d4cf7e8708734881c16b86d6314b313b40d01c
           ports:
             - containerPort: 5001
           resources:
