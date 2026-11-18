@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: order-service
-          image: docker.io/yatharthchandel/order-service:v1
+          image: docker.io/yatharthchandel/order-service@sha256:caa2d5b962128120f08881cf65c091e9aacd3dd07daa02ea7b8a80d05f75deee
           ports:
             - containerPort: 5003
           resources:
