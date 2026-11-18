@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: api-gateway
-          image: docker.io/yatharthchandel/api-gateway:v1
+          image: docker.io/yatharthchandel/api-gateway@sha256:d492847423095abe646cec03e1329a01e4ad302ce8275b2a7d980b7816abba73
           ports:
             - containerPort: 5000
           resources:
