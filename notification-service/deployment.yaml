@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: notification-service
-          image: docker.io/yatharthchandel/notification-service:v1
+          image: docker.io/yatharthchandel/notification-service@sha256:8fb82a887108a5f2405fdb6f0d868c9a09d0f87929507477925ade14e9e98712
           ports:
             - containerPort: 5002
           resources:
